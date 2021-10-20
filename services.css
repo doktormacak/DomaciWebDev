@@ -1,0 +1,19 @@
+.serviceIcon {
+    background-color: black;
+}
+.serviceElements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+   
+    
+
+}
+
+.element {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    
+}
+
+

@@ -4,10 +4,11 @@ html {
     font-size: 100%;         /* html styling */
     box-sizing: border-box;
     font-family: lato;
-    font-weight: 700;
+    font-weight: 300;
     background-image: url(/Domaci/images/htmlstyle.png);
     background-repeat: no-repeat;
     background-position-x: right;
+    overflow-x: hidden;
     
     
 }
@@ -30,15 +31,19 @@ body{
     margin: 0;
     padding: 0;
     font-size:1.125rem;
+    text-align: center;
+    
+    
+    
 }
 span {
     display: block;        /* mobile hamburger menu */
-    width: 26px;
-    height: 2px;
+    width: 1.625rem;
+    height: 0.125rem;
     background-color: white;
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
     transition: all 300ms ease-in-out;
-    transform-origin: 3px 1px;
+    transform-origin: 0.188rem 0.06rem;
 }
 
 .header_menu.open  span:first-child {  /* hamburger rotation into close button */
@@ -54,6 +59,11 @@ span {
 .header_menu.open span:last-child{
     transform: rotate(-45deg);
 }
+nav {
+    position: relative;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+}
 
 
 
@@ -61,10 +71,11 @@ span {
 
 .flex {
     display: flex;
-    padding: 24px;
+    padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    gap: 33px;
+    gap: 2.06rem;
+    text-align: left;
     
    
        
@@ -84,7 +95,7 @@ span {
 
 .btn1 {
     padding: 0.875rem 3rem;
-    border-radius: 50px;       /*styling of login button */
+    border-radius: 3.125rem;       /*styling of login button */
     cursor: pointer;
     color: white;
     background-color: #FF8923;
@@ -114,17 +125,18 @@ span {
     
     
     
+    
         
 }
 
 .overlay {
     opacity: 0;   /* mobile menu overlay */
     position: fixed;
-    top: 3.75rem;
+    top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: linear-gradient(#a5a2f6, transparent);
+    background-image: linear-gradient(#A5A2F6, black);
 }
 
 .header .overlay {
@@ -136,6 +148,7 @@ span {
     animation: fade-in 300ms ease-in-out forwards;
 
 }
+
 
 .header.open .mobileHeaderLinks a {
     animation: fade-in 300ms ease-in-out forwards;
@@ -160,14 +173,48 @@ span {
     .btn1 {
         display: none;
     }
+
+    
     
 
 }
 
 @media (min-width: 64em){
+
+
     .header_menu {        /* hiding hamburger for desktop */
         display: none;
     }
+    .heroContainer {
+        display: flex;
+        gap: 3.75rem;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    .hero {
+        margin-top: 5.6rem;
+        
+        
+
+    }
+   
+    
+    .hero_img {
+
+        flex:2;
+        order: 2;
+        background-position:center center;
+        flex-basis: 100%;
+        max-width: 37.5rem;
+        max-height: 25rem;
+        
+         
+    }
+    
 }
 
 @keyframes fade-in {      /* mobile menu overlay animation */
@@ -186,6 +233,7 @@ span {
     to {
         
         opacity: 1;
+        
 
     }
 }
@@ -205,6 +253,7 @@ span {
 
         visibility: hidden;
         opacity: 0;
+        
 
     }
     
