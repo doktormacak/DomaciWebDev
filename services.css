@@ -1,19 +1,70 @@
-.serviceIcon {
-    background-color: black;
+.services h5 {
+    color: #A5A2F6;
 }
+
+
+
 .serviceElements {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 20px;
-   
+    padding: 1.5rem; 
+    justify-content: center;
     
+    
+    
+    
+    
+}
+.serviceIcon img{
+    width: 4.5rem;
+    height: 4.5rem;
 
 }
 
 .element {
-    flex-basis: 33.33%;
-    max-width: 33.33%;
+    
+    width: 18.5rem;
+    height: 18.5rem;
+    display: block;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+#ele1 {
+    background-color: #FBBA77;
+}
+#ele2 {
+    background-color: #41EAE3;
+}
+#ele3 {
+    background-color: #69529F;
+}
+#ele4 {
+    background-color: #4386D2;
+}
+#ele5 {
+    background-color: #A5A2F6;
+}
+#ele6 {
+    background-color: #FF8088;
+}
+
+.servicebtn a{
+    padding: 0.5rem 1.75rem;
+    border-radius: 3.125rem;       /*styling of login button */
+    cursor: pointer;
+    color: white;
+    border-style: solid;
+    font-size: 0.875rem;
+    border-color: white;
     
 }
 
+.element h3{
+    margin-top: 2rem;
+    margin-bottom: 0.1rem;
+}
 
+.element p {
+    margin-top: 0.5rem;
+}
