@@ -4,6 +4,7 @@ h1, h2, h3 {
 .hero {
 
     padding:0 1.5rem 0 1.5rem;
+    
 }
 .hero_img {
     
@@ -18,6 +19,10 @@ h1, h2, h3 {
     
     
 
+}
+.hero_txt {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
 }
 
 .hero_txt h1{

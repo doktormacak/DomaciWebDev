@@ -28,8 +28,38 @@ btnHamburger.addEventListener('click', function(){
       
         
     }
+
+
+
+    
     
 });
+
+document.addEventListener('click', tabClick);
+function tabClick(event) {
+    var elem = event.target,
+        elemHREF = elem.getAttribute('href'),
+        tabs = document.querySelectorAll('.categories li a'), 
+        tabContents = document.querySelectorAll('.galleryImg li');
+            
+                
+    if (elemHREF != null && elemHREF.indexOf('tab-') != -1) {
+        event.preventDefault();
+            
+                    
+        if (elem.className.indexOf('active') == -1) {
+                        
+            for (var i = 0; i < tabs.length; i++) {
+                 tabs[i].classList.remove('active');
+                 tabContents[i].classList.remove('visible');
+            }
+            
+                        
+            elem.classList.add('active');
+            document.getElementById(elemHREF).classList.add('visible');
+        }
+    }
+}
 
 
   

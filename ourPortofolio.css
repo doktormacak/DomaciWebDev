@@ -1,0 +1,92 @@
+.OurPortofolio{
+    background-color: #F8F8F8;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+
+.categories{
+    flex: 2;
+}
+.galleryImg {
+    flex: 1;
+    list-style: none;
+    position: relative;
+}
+
+.categories, 
+.galleryImg {
+
+    list-style: none;
+    
+}
+
+.categories li a{
+    padding: 0.875rem 3rem;
+    border-radius: 3.125rem;   
+    cursor: pointer;
+    color: white;
+    background-color: #A5A2F6;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: 5em;
+    line-height: 5em;
+    padding: .6rem 3em;
+    transition: all .3s ease;
+    
+}
+.categories li a.active {
+    background-color: #FF8923;
+    color: white;
+    cursor: default;
+
+}
+
+.categories li {
+    list-style: none;
+    
+}
+
+.galleryImg li img {
+    width: 300px;
+    height: 250px;
+}
+
+.galleryImg li {
+   
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+    
+
+}
+.galleryImg li.visible {
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+
+@media (max-width: 64em) {
+
+    .categories{
+        display: none;
+    }
+
+    .galleryImg li {
+        opacity: 1;
+        position: inherit;
+        
+        
+    }
+    .galleryImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+

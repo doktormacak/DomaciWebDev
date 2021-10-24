@@ -35,6 +35,7 @@ body{
     
     
     
+    
 }
 span {
     display: block;        /* mobile hamburger menu */
@@ -110,16 +111,19 @@ nav {
 }
 .mobileHeaderLinks {
     
-    position: absolute;
-    left: 50%
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 .mobileHeaderLinks a {
 
     
-    display: block;
-    text-align: end;   
-    padding: 1rem 5.35rem;
+    
     color: white;
     font-weight: 700;
     
